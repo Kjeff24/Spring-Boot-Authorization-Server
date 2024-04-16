@@ -8,6 +8,7 @@ To allow OAuth clients to register with an OAuth server, the OAuth server should
 spring.security.oauth2.authorizationserver.client.demo-client.registration.authorization-grant-types=client_credentials, authorization_code, refresh_token
 spring.security.oauth2.authorizationserver.client.demo-client.registration.client-authentication-methods=client_secret_basic
 spring.security.oauth2.authorizationserver.client.demo-client.registration.client-id=demo
+spring.security.oauth2.authorizationserver.client.demo-client.registration.client-secret="{noop}secret"
 # registrationId = reg-client
 spring.security.oauth2.authorizationserver.client.demo-client.registration.redirect-uris=http://127.0.0.1:8082:8082/login/oauth2/code/reg-client
 spring.security.oauth2.authorizationserver.client.demo-client.registration.scopes=user.read, user.write, openid
