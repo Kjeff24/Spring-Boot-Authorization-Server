@@ -2,6 +2,17 @@
 
 A simple oauth authorization server, resource server and an oauth client server
 
+## USAGE
+- Run in order:
+  - spring-oauth-server
+  - spring-resource-server
+  - spring-oauth-client 
+
+- You are required to use `http://127.0.0.1:8082` to access oauth client endpoints, `http://localhost:8082` wouldn't work
+
+## WORKFLOW
+![AuthorizationServer.png](AuthorizationServer.png)
+
 ## OAUTH SERVER
 To allow OAuth clients to register with an OAuth server, the OAuth server should include the following properties:
 ```
@@ -27,7 +38,8 @@ spring.security.oauth2.client.registration.reg-client.provider=spring
 spring.security.oauth2.client.registration.reg-client.scope=user.read, openid
 ```
 
-# Resource Server
+## Resource Server
 ```
 spring.security.oauth2.resourceserver.jwt.issuer-uri=http://localhost:8080
 ```
+
